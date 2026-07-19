@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Recommendation Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav input {
+            padding: 8px;
+            margin-left: auto;
+        }
+
+        nav button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .home {
+            height: 500px;
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+        }
+
+        .home h1 {
+            font-size: 50px;
+        }
+
+        .home p {
+            font-size: 20px;
+            width: 500px;
+        }
+
+        .section {
+            padding: 40px;
+        }
+
+        .results {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid gray;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        form input, textarea {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- Navbar Task 2 -->
+
+<nav>
+
+<h2 style="color:white;">Travel Explorer</h2>
+
+<a href="#home">Home</a>
+
+<a href="#about">About Us</a>
+
+<a href="#contact">Contact Us</a>
+
+
+<input type="text" id="searchInput" placeholder="Search beach, temple, country">
+
+
+<button onclick="search()">Search</button>
+
+<button onclick="clearResults()">Reset</button>
+
+
+</nav>
+
+
+
+<!-- Home Page Task 3 -->
+
+<section id="home" class="home">
+
+<h1>Explore The World</h1>
+
+<p>
+Welcome to Travel Explorer. 
+Discover beautiful beaches, historical temples and amazing countries.
+Plan your next unforgettable journey with us.
+</p>
+
+
+</section>
+
+
+
+<!-- Results will show here -->
+
+<section class="section">
+
+<h2>Recommendations</h2>
+
+<div id="results" class="results">
+
+</div>
+
+</section>
+
+
+
+
+<!-- About Us Task 4 -->
+
+<section id="about" class="section">
+
+<h1>About Us</h1>
+
+<p>
+Travel Explorer is a company that helps travelers discover amazing destinations around the world.
+</p>
+
+
+<h3>Our Team</h3>
+
+<p>
+Ayesha Fatima - Founder
+</p>
+
+<p>
+Ali Khan - Travel Manager
+</p>
+
+<p>
+Sara Ahmed - Customer Support
+</p>
+
+
+</section>
+
+
+
+
+
+<!-- Contact Us Task 5 -->
+
+<section id="contact" class="section">
+
+
+<h1>Contact Us</h1>
+
+
+<form>
+
+<input type="text" placeholder="Enter your name">
+
+
+<input type="email" placeholder="Enter your email">
+
+
+<textarea placeholder="Write your message"></textarea>
+
+
+<button type="submit">
+Submit
+</button>
+
+
+</form>
+
+
+</section>
+
+
+
+<script src="./travel_recommendation.js"></script>
+
+
+</body>
+
+</html>
